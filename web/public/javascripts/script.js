@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const e=new IntersectionObserver((e,t)=>{e.forEach(e=>{if(e.isIntersecting){const r=e.target;r.src=r.getAttribute("data-src"),r.removeAttribute("data-src"),t.unobserve(r)}})},{rootMargin:"50px"});document.querySelectorAll("img.lazy").forEach(t=>e.observe(t))});
